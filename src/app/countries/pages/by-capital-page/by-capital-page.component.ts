@@ -5,4 +5,8 @@ import { Component } from '@angular/core';
   templateUrl: './by-capital-page.component.html',
   styles: ``,
 })
-export class ByCapitalPageComponent {}
+export class ByCapitalPageComponent {
+  searchCapital(term: string): void {
+    console.log({ term });
+  }
+}

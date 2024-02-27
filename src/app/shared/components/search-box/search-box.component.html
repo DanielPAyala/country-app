@@ -1,1 +1,6 @@
-<input type="text" [placeholder]="placeholder" class="form-control" />
+<input
+  #txtInput
+  (keyup.enter)="search(txtInput.value)"
+  [placeholder]="placeholder"
+  class="form-control"
+  type="text" />
